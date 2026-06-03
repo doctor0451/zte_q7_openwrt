@@ -131,5 +131,5 @@ cd -
 # 修改mk固件IMAGE_SIZE为15744K(匹配16M闪存)，保留原有USB驱动配置
 MK_FILE="target/linux/ramips/image/mt7620.mk"
 sed -i '/define Device\/zte_q7/,/endef/ {
-    s/IMAGE_SIZE := .*/IMAGE_SIZE := 15744/
+    s/IMAGE_SIZE := .*/IMAGE_SIZE := 15744k/
 }' "$MK_FILE"
